@@ -3,8 +3,7 @@ from flask import Flask, jsonify, request, render_template
 import weather_controller
 
 app = Flask(__name__)
-API_KEY = "rG5GGCfrFggkWmGmA355CHIjRPyLeVUE"
-
+API_KEY = "WHpvf2WDUwyOHxv5IGejtc7voNnLEHDu"
 @app.route('/weather/get/{city}', methods=['GET'])
 def weather_get(city):
     weather_info = weather_controller.get_weaher_info(city)
